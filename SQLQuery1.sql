@@ -1,9 +1,7 @@
 USE CriminalisticaDB;
 GO
 
--- =======================================
 -- TABLA: Localidad
--- =======================================
 CREATE TABLE Localidad (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Nombre NVARCHAR(150) NOT NULL,
@@ -12,9 +10,7 @@ CREATE TABLE Localidad (
 );
 GO
 
--- =======================================
 -- TABLA: Barrio
--- =======================================
 CREATE TABLE Barrio (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Nombre NVARCHAR(150) NOT NULL,
@@ -73,9 +69,7 @@ CREATE TABLE Delito (
 );
 GO
 
--- =======================================
 -- TABLA: Persona
--- =======================================
 CREATE TABLE Persona (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Nombre NVARCHAR(100) NOT NULL,
@@ -86,9 +80,7 @@ CREATE TABLE Persona (
 );
 GO
 
--- =======================================
 -- ÍNDICES PARA OPTIMIZACIÓN
--- =======================================
 CREATE INDEX IDX_Barrio_LocalidadId ON Barrio(LocalidadId);
 GO
 
