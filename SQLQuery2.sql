@@ -105,7 +105,6 @@ GO
 -- =======================================
 -- UBICACIONES DEMO PARA EL MAPA
 -- Estas coordenadas son de referencia para probar el sistema.
--- No las vendas como registros oficiales exactos.
 -- =======================================
 INSERT INTO Ubicacion (LocalidadId, BarrioId, Latitud, Longitud) VALUES
 (1, 1, 4.728100, -74.034500),
